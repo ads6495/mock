@@ -18,6 +18,29 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* placing/style for headshot image */
+.headshot {
+  width: 300px;
+  max-width: 45%;
+  margin: 12rem 0 0 7rem;
+  border-radius: 6px;
+}
+
+/* layout for img/speech bubble */
+.container1 {
+  display: flex;
+  align-items: center;
+}
 
 
+/* creates speech bubble apperance next to image */
+body div div#quote-box {
+  background-color: antiquewhite;
+  opacity: .5;
+  border-radius: 6px;
+  margin-left: 1rem;
+  font-size: 1.6rem;
+  line-height: .2;
 }
