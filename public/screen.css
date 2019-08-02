@@ -1,5 +1,5 @@
 :root {
-  font: 16px / 1 sans-serif;
+  font: 16px / 1 roboto;
 }
 
 html {
@@ -41,10 +41,15 @@ body div div#quote-box {
   background-color: antiquewhite;
   position: relative;
   opacity: .5;
-  border-radius: 6px;
+  border-radius: 1rem;
   margin-left: 1rem;
   font-size: 1.6rem;
   line-height: .2;
+}
+
+section div article blockquote {
+  padding: 1rem 0;
+
 }
 
 #quote-box::after {
@@ -83,16 +88,25 @@ div ul {
   padding: .2rem 0;
 }
 
-.container3 {
-  padding-top: 4rem;
-  background-image: url("./images/react.png");
+.container3,
+.container4 {
+  object-fit: fill;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 1rem;
+  border-radius: 10px;
+}
 
+.container3 {
+  background-image: url("./images/react.png");
+  padding-top: 4rem;
+  background-position-y: 60%;
+  background-position-x: center;
 }
 
 .container4 {
   background-image: url("./images/code.png");
   padding-top: 4rem;
-
 
 }
 
@@ -112,4 +126,18 @@ span {
 
 .article-background-coloring {
   background-color: #ffffff;
+}
+
+.read-more-btn {
+  float: right;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #2281d5;
+  border: none;
+  border-radius: 15px;
 }
