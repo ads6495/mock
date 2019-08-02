@@ -32,17 +32,37 @@ body {
 .container1 {
   display: flex;
   align-items: center;
+  padding-bottom: 5rem;
 }
 
 
 /* creates speech bubble apperance next to image */
 body div div#quote-box {
   background-color: antiquewhite;
+  position: relative;
   opacity: .5;
   border-radius: 6px;
   margin-left: 1rem;
   font-size: 1.6rem;
   line-height: .2;
+}
+
+#quote-box::after {
+  content: "";
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+  border-width: 1em;
+  border-left-color: antiquewhite;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-style: solid;
+  transform: rotate(225deg);
+}
+
+ul li {
+  list-style: none;
 }
 
 div ul {
@@ -56,4 +76,40 @@ div ul {
   height: 200px;
   object-fit: cover;
   border-radius: 10px;
+}
+
+.container2 {
+  background-color: rgba(0, 0, 0, 0.452);
+  padding: .2rem 0;
+}
+
+.container3 {
+  padding-top: 4rem;
+  background-image: url("./images/react.png");
+
+}
+
+.container4 {
+  background-image: url("./images/code.png");
+  padding-top: 4rem;
+
+
+}
+
+div>article {
+  background-color: white;
+}
+
+span {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+.footer-section {
+  padding-top: 5rem;
+  background-color: #031019;
+}
+
+.article-background-coloring {
+  background-color: #ffffff;
 }
