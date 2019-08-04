@@ -1,5 +1,5 @@
 :root {
-  font: 16px / 1 roboto;
+  font: 16px / 1 'Roboto';
 }
 
 html {
@@ -35,25 +35,23 @@ body {
   padding-bottom: 5rem;
 }
 
-
 /* creates speech bubble apperance next to image */
 body div div#quote-box {
   background-color: antiquewhite;
   position: relative;
-  opacity: .5;
+  opacity: 0.5;
   border-radius: 1rem;
   margin-left: 1rem;
   font-size: 1.6rem;
-  line-height: .2;
+  line-height: 0.2;
 }
 
 section div article blockquote {
   padding: 1rem 0;
-
 }
 
 #quote-box::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -16px;
   left: 0;
@@ -85,7 +83,7 @@ div ul {
 
 .container2 {
   background-color: rgba(0, 0, 0, 0.452);
-  padding: .2rem 0;
+  padding: 0.2rem 0;
 }
 
 .container3,
@@ -98,19 +96,18 @@ div ul {
 }
 
 .container3 {
-  background-image: url("./images/react.png");
+  background-image: url('./images/react.png');
   padding-top: 4rem;
   background-position-y: 60%;
   background-position-x: center;
 }
 
 .container4 {
-  background-image: url("./images/code.png");
+  background-image: url('./images/code.png');
   padding-top: 4rem;
-
 }
 
-div>article {
+div > article {
   background-color: white;
 }
 
@@ -140,4 +137,38 @@ span {
   background-color: #2281d5;
   border: none;
   border-radius: 15px;
+}
+
+.footer-end {
+  text-align: center;
+  padding-left: 12rem;
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+footer section div ul.footer-container {
+  flex-basis: calc(25% - 20px);
+  background: grey;
+}
+
+footer div#footer-end {
+  color: white;
+  text-align: center;
+  margin-top: 7rem;
+  padding-bottom: 2rem;
+}
+
+ul.footer-container {
+  padding-right: 125px;
+  padding-left: 125px;
+  margin-right: 275px;
+  margin-left: 275px;
+}
+
+.fa-twitter {
+  background-color: #0081d5;
+  color: #fff;
+  border-radius: 50%;
+  padding: 1rem;
 }
