@@ -43,7 +43,6 @@ body div div#quote-box {
   border-radius: 1rem;
   margin-left: 1rem;
   font-size: 1.6rem;
-  line-height: 0.2;
 }
 
 section div article blockquote {
@@ -136,7 +135,7 @@ span {
   color: #fff;
   background-color: #2281d5;
   border: none;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .footer-end {
@@ -171,4 +170,36 @@ ul.footer-container {
   color: #fff;
   border-radius: 50%;
   padding: 1rem;
+}
+
+/* Media queries for responsive design */
+
+/* stacks blockquote and headshot.png */
+@media screen and (max-width: 600px) {
+  .container1 {
+    flex-wrap: wrap;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  div ul {
+    flex-direction: column-reverse;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  div ul.footer-container {
+    margin: 0;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  h1.footer-end {
+    padding: 1rem 0 0 0;
+    height: 100%;
+  }
 }
